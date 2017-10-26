@@ -1,0 +1,163 @@
+@charset "UTF-8";
+/* CSS-reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Базовые параметры и ClearFix */
+html {
+  background-color: #ffd;
+  font: 18px/1.45 Tahoma, sans-serif; }
+
+::-moz-selection {
+  color: #a54;
+  background: #ffd; }
+
+::selection {
+  color: #a54;
+  background: #ffd; }
+
+.wrapper {
+  min-height: -webkit-calc(100vh - 40px);
+  min-height: calc(100vh - 40px);
+  padding: 12px 0 30px; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  min-width: 960px;
+  display: block; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Блок хедера */
+.header {
+  border: 4px solid #a54;
+  margin: 0 auto 30px;
+  background-color: #ccf;
+  padding: 12px;
+  -webkit-border-radius: 0 60px 0 60px;
+          border-radius: 0 60px 0 60px;
+  height: 110px; }
+
+.logo {
+  float: left;
+  background-color: #A54;
+  margin-left: 30px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  padding: 10px; }
+
+.logo__text {
+  color: #ffd;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center; }
+
+.notification {
+  margin-left: 80px; }
+
+.notification__name {
+  text-align: center; }
+
+.notification__description {
+  text-align: right; }
+
+/* Блок контентной части */
+.text-block {
+  background-color: #eaa;
+  padding: 12px;
+  font-size: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.text-block__column {
+  background-color: #9dd;
+  display: inline-block;
+  width: -webkit-calc(33.3% - 8px);
+  width: calc(33.3% - 8px);
+  font-size: 1rem;
+  padding: 18px 12px; }
+
+.text-block__column::first-letter {
+  background-color: #ffD;
+  padding: 0 8px;
+  border: 2px solid #a54;
+  margin-right: 2px;
+  font: 1.8rem/1.6rem monospace; }
+
+/* Блок футера */
+.footer {
+  height: 40px;
+  background-color: #ccf;
+  font-size: 0; }
+
+.footer p {
+  display: inline-block;
+  width: 33.3%;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 40px; }
+
+/* Адаптивка */
+@media screen and (max-width: 480px) {
+  .logo__text {
+    font-size: 0.6rem; } }
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .logo__text {
+    font-size: 0.9rem; } }
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .logo__text {
+    font-size: 1.2rem; } }
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .logo__text {
+    font-size: 1.5rem; } }
