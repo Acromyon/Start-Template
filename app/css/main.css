@@ -55,15 +55,12 @@ html {
   background: #ffd; }
 
 .wrapper {
-  min-height: -webkit-calc(100vh - 40px);
-  min-height: calc(100vh - 40px);
-  padding: 12px 0 30px; }
+  min-height: -webkit-calc(100vh - 140px);
+  min-height: calc(100vh - 140px); }
 
 .container {
-  margin: 0 auto;
-  max-width: 1140px;
-  min-width: 960px;
-  display: block; }
+  max-width: 1170px;
+  min-width: 960px; }
 
 .clearfix:after {
   content: "";
@@ -72,78 +69,35 @@ html {
 
 /* Блок хедера */
 .header {
-  border: 4px solid #a54;
-  margin: 0 auto 30px;
   background-color: #ccf;
-  padding: 12px;
-  -webkit-border-radius: 0 60px 0 60px;
-          border-radius: 0 60px 0 60px;
-  height: 110px; }
-
-.logo {
-  float: left;
-  background-color: #A54;
-  margin-left: 30px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  padding: 10px; }
-
-.logo__text {
-  color: #ffd;
-  font-size: 1.8rem;
-  font-weight: 600;
-  text-align: center; }
-
-.notification {
-  margin-left: 80px; }
-
-.notification__name {
-  text-align: center; }
-
-.notification__description {
-  text-align: right; }
+  height: 80px;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 80px; }
 
 /* Блок контентной части */
-.text-block {
-  background-color: #eaa;
-  padding: 12px;
-  font-size: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+.main {
+  margin: 40px 0; }
 
-.text-block__column {
-  background-color: #9dd;
-  display: inline-block;
-  width: -webkit-calc(33.3% - 8px);
-  width: calc(33.3% - 8px);
-  font-size: 1rem;
-  padding: 18px 12px; }
+.text-cols {
+  background-color: #a54;
+  padding: 0 5px; }
 
-.text-block__column::first-letter {
-  background-color: #ffD;
-  padding: 0 8px;
-  border: 2px solid #a54;
-  margin-right: 2px;
-  font: 1.8rem/1.6rem monospace; }
+.text-cols .text-cols__content {
+  background-color: #a54;
+  padding: 10px 5px; }
+
+.text-cols__inner-content {
+  background-color: #ccf;
+  padding: 30px; }
 
 /* Блок футера */
 .footer {
-  height: 40px;
+  height: 100px;
   background-color: #ccf;
-  font-size: 0; }
-
-.footer p {
-  display: inline-block;
-  width: 33.3%;
+  font-size: 3rem;
   text-align: center;
-  font-size: 1rem;
-  line-height: 40px; }
+  line-height: 100px; }
 
 /* Адаптивка */
 @media screen and (max-width: 480px) {
