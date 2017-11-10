@@ -1,17 +1,17 @@
 "use strict";
 
-let textCols = document.getElementsByClassName("text-cols__inner-content");
+let alignItems = document.getElementsByClassName("height-align");
 
-let textColHeight = 0;
+let maxItemlHeight = 0;
 
-for (let i = 0; i < textCols.length; i++){
-	if (textColHeight < textCols[i].clientHeight){
-		textColHeight = textCols[i].clientHeight;
+for (let i = 0; i < alignItems.length; i++){
+	if (maxItemlHeight < alignItems[i].clientHeight){
+		maxItemlHeight = alignItems[i].clientHeight;
 	}
 }
 
-for (let i = 0; i < textCols.length; i++){
-	textCols[i].style.height = textColHeight + 'px';
+for (let i = 0; i < alignItems.length; i++){
+	alignItems[i].style.height = maxItemlHeight + 'px';
 }
 
-console.log(textCols);
+console.log(alignItems);

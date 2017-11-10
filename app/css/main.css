@@ -70,14 +70,18 @@ html {
 /* Блок хедера */
 .header {
   background-color: #ccf;
-  height: 80px;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  text-align: center; }
+
+.inner-header {
+  font-size: 2.5rem;
   text-align: center;
-  line-height: 80px; }
+  padding: 10px 0; }
 
 /* Блок контентной части */
 .main {
-  margin: 40px 0; }
+  margin-top: 30px;
+  margin-bottom: 40px; }
 
 .text-cols {
   background-color: #a54;
@@ -94,24 +98,26 @@ html {
 /* Блок футера */
 .footer {
   height: 100px;
-  background-color: #ccf;
-  font-size: 3rem;
+  background-color: #ccf; }
+
+.inner-footer {
+  font-size: 2.5rem;
   text-align: center;
   line-height: 100px; }
 
 /* Адаптивка */
 @media screen and (max-width: 480px) {
-  .logo__text {
+  .text-cols {
     font-size: 0.6rem; } }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .logo__text {
-    font-size: 0.9rem; } }
+  .text-cols {
+    font-size: 0.7rem; } }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
-  .logo__text {
-    font-size: 1.2rem; } }
+  .text-cols {
+    font-size: 0.8rem; } }
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
-  .logo__text {
-    font-size: 1.5rem; } }
+  .text-cols {
+    font-size: 0.9rem; } }
