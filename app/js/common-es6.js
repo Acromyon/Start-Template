@@ -13,5 +13,3 @@ maxItemlHeight += 'px';
 for (let i = 0; i < alignItems.length; i++) {
 	alignItems[i].style.height = maxItemlHeight;
 }
-
-console.log(alignItems);
