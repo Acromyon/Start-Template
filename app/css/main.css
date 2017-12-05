@@ -26,6 +26,15 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
+a {
+  text-decoration: none;
+  color: inherit; }
+
+button {
+  outline: none;
+  border: none;
+  font-family: inherit; }
+
 ol, ul {
   list-style: none; }
 
@@ -41,10 +50,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* Базовые параметры и ClearFix */
+/* Шрифты, базовые параметры и ClearFix */
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Regular.ttf");
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.woff"); }
+
 html {
   background-color: #ffd;
-  font: 18px/1.45 Tahoma, sans-serif; }
+  font: 18px/1.45 Roboto, sans-serif; }
+
+button:active {
+  -webkit-transform: scale(0.98);
+      -ms-transform: scale(0.98);
+          transform: scale(0.98); }
 
 ::-moz-selection {
   color: #a54;
