@@ -53,9 +53,8 @@ table {
 /* Шрифты, базовые параметры и ClearFix */
 @font-face {
   font-family: 'Roboto';
-  src: url("../fonts/Roboto-Regular.ttf");
   src: url("../fonts/Roboto-Regular.eot");
-  src: url("../fonts/Roboto-Regular.woff"); }
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"); }
 
 html {
   background-color: #ffd;
@@ -79,8 +78,7 @@ button:active {
   min-height: calc(100vh - 140px); }
 
 .container {
-  max-width: 1170px;
-  min-width: 960px; }
+  max-width: 97.5%; }
 
 .clearfix:after {
   content: "";
@@ -124,18 +122,17 @@ button:active {
   line-height: 100px; }
 
 /* Адаптивка */
-@media screen and (max-width: 480px) {
-  .text-cols {
-    font-size: 0.6rem; } }
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
   .text-cols {
     font-size: 0.7rem; } }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
   .text-cols {
     font-size: 0.8rem; } }
 
-@media screen and (min-width: 993px) and (max-width: 1200px) {
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
   .text-cols {
     font-size: 0.9rem; } }
