@@ -1,11 +1,16 @@
-@import reset
-
-/* Шрифты, базовые параметры и ClearFix */
+/* Подключение шрифтов */
 
 @font-face
 	font-family: 'Roboto'
 	src: url('../fonts/Roboto-Regular.eot')
 	src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype')
+	font-style: normal
+	font-weight: normal
+
+// подключаем CSS-сброс
+@import reset
+
+/* Шрифты, базовые параметры и ClearFix */
 
 html
 	background-color: #ffd
@@ -24,10 +29,28 @@ button:active
 .container
 	max-width: 97.5%
 
-.clearfix:after
+.clearfix::after
 	content: ""
 	display: table
 	clear: both
+
+/* Переменные */
+
+$_8px: 0.4445rem
+$_10px: 0.5556rem
+$_12px: 0.6667rem
+$_14px: 0.7778rem
+$_15px: 0.8334rem
+$_16px: 0.8889rem
+$_17px: 0.9445rem
+$_18px: 1rem
+$_19px: 1.0556rem
+$_20px: 1.1112rem
+$_24px: 1.3334rem
+$_28px: 1.5556rem
+$_32px: 1.7778rem
+$_36px: 3rem
+$_42px: 2.3334rem
 
 /* Блок хедера */
 
@@ -35,7 +58,7 @@ button:active
 	background-color: #ccf
 
 .inner-header
-	font-size: 2.5rem
+	font-size: $_42px
 	text-align: center
 	padding: 10px 0
 
@@ -64,8 +87,9 @@ button:active
 	background-color: #ccf
 
 .inner-footer
-	font-size: 2.5rem
+	font-size: $_42px
 	text-align: center
 	line-height: 100px
 
+// подключаем медиа-запросы
 @import media-queries

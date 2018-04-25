@@ -1,4 +1,12 @@
 @charset "UTF-8";
+/* Подключение шрифтов */
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
 /* CSS-reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -51,11 +59,6 @@ table {
   border-spacing: 0; }
 
 /* Шрифты, базовые параметры и ClearFix */
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto-Regular.eot");
-  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"); }
-
 html {
   background-color: #ffd;
   font: 18px/1.45 Roboto, sans-serif; }
@@ -85,12 +88,13 @@ button:active {
   display: table;
   clear: both; }
 
+/* Переменные */
 /* Блок хедера */
 .header {
   background-color: #ccf; }
 
 .inner-header {
-  font-size: 2.5rem;
+  font-size: 2.3334rem;
   text-align: center;
   padding: 10px 0; }
 
@@ -117,7 +121,7 @@ button:active {
   background-color: #ccf; }
 
 .inner-footer {
-  font-size: 2.5rem;
+  font-size: 2.3334rem;
   text-align: center;
   line-height: 100px; }
 
