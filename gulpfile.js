@@ -6,10 +6,19 @@ var gulp = require('gulp'),
 	browserSync = require('browser-sync'),
 	autoprefixer = require('gulp-autoprefixer'),
 	babel = require('gulp-babel'),
-	uglify = require('gulp-uglifyjs');
+	uglify = require('gulp-uglifyjs'),
+	plumber = require('gulp-plumber'),
+	notify = require('gulp-notify');
 
 gulp.task('sass', function () {
 	return gulp.src('app/sass/*.sass')
+		.pipe(plumber({
+			errorHandler: notify.onError(err => ({
+				title: 'ERROR SASS Сompilation',
+				message: err.message,
+				sound: 'Beep'
+			}))
+		}))
 		.pipe(sass())
 		.pipe(autoprefixer(['last 15 versions', '> 1%']))
 		.pipe(concat('main.css'))
@@ -21,7 +30,14 @@ gulp.task('sass', function () {
 });
 
 gulp.task('babel', function () {
-	gulp.src('app/js/common-es6.js')
+	return gulp.src('app/js/common-es6.js')
+		.pipe(plumber({
+			errorHandler: notify.onError(err => ({
+				title: 'ERROR JS Сompilation',
+				message: err.message,
+				sound: 'Beep'
+			}))
+		}))
 		.pipe(babel({ presets: ['env'] }))
 		.pipe(uglify())
 		.pipe(rename('common.min.js'))
