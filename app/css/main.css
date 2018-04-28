@@ -83,7 +83,7 @@ button:active {
 .container {
   max-width: 97.5%; }
 
-.clearfix:after {
+.clearfix::after {
   content: "";
   display: table;
   clear: both; }
