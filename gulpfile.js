@@ -5,7 +5,7 @@ var gulp = require('gulp'),
 	browserSync = require('browser-sync'),
 	autoprefixer = require('gulp-autoprefixer'),
 	babel = require('gulp-babel'),
-	uglify = require('gulp-uglify-es'),
+	uglify = require('gulp-uglify'),
 	plumber = require('gulp-plumber'),
 	notify = require('gulp-notify'),
 	del = require('del'),
@@ -42,8 +42,9 @@ gulp.task('babel', function () {
 				sound: 'Beep'
 			}))
 		}))
+		.pipe(babel({ presets: ['env'] }))
+		.pipe(rename('common.js'))
 		.pipe(sourcemaps.init())
-			.pipe(babel({ presets: ['env'] }))
 			.pipe(uglify())
 			.pipe(rename('common.min.js'))
 		.pipe(sourcemaps.write('./maps'))
