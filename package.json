@@ -12,17 +12,21 @@
     "babel-core": "latest",
     "babel-preset-env": "latest",
     "browser-sync": "latest",
+    "del": "latest",
     "eslint-config-rallycoding": "latest",
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
     "gulp-babel": "latest",
-    "gulp-concat": "latest",
     "gulp-cssnano": "latest",
+    "gulp-imagemin": "latest",
     "gulp-notify": "latest",
     "gulp-plumber": "latest",
     "gulp-rename": "latest",
     "gulp-sass": "latest",
-    "gulp-uglifyjs": "latest"
+    "gulp-sourcemaps": "latest",
+    "gulp-svgmin": "latest",
+    "gulp-uglifyjs": "latest",
+    "imagemin-pngquant": "latest"
   },
   "dependencies": {
     "gulp-sass": "latest"
