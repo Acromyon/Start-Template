@@ -27,8 +27,5 @@
     "gulp-svgmin": "latest",
     "gulp-uglify": "latest",
     "imagemin-pngquant": "latest"
-  },
-  "dependencies": {
-    "gulp-sass": "latest"
   }
 }
