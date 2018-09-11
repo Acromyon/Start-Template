@@ -1,11 +1,58 @@
 {
-	"extends": "rallycoding",
+	"extends": [
+		"plugin:vue/essential",
+		"eslint:all"
+	],
 	"env": {
 		"browser": true,
 		"node": true,
 		"es6": true
 	},
 	"rules": {
-		"max-len": "off"
+		"semi": ["error", "always"],
+		"quotes": ["error", "single"],
+		"no-tabs": "off",
+		"no-console": "off",
+		"no-var": "off",
+		"no-plusplus": "off",
+		"no-multi-spaces": ["error", {
+			"exceptions": {
+				"VariableDeclarator": true,
+				"ImportDeclaration": true
+			}
+		}],
+		"one-var": ["error", {
+			"var": "always",
+			"let": "never",
+			"const": "never"
+		}],
+		"prefer-const": "off",
+		"no-use-before-define": "off",
+		"no-magic-numbers": "off",
+		"no-continue": "off",
+		"no-extra-parens": "off",
+		"func-style": "off",
+		"capitalized-comments": "off",
+		"multiline-comment-style": "off",
+		"line-comment-position": "off",
+		"no-inline-comments": "off",
+		"require-jsdoc": "off",
+		"require-unicode-regexp": "off",
+		"indent": "off",
+		"guard-for-in": "off",
+		"array-element-newline": "off",
+		"sort-keys": "off",
+		"sort-imports": "off",
+		"sort-vars": "off",
+		"radix": "off",
+		"init-declarations": "off",
+		"quote-props": "off",
+		"space-before-function-paren": "off",
+		"padded-blocks": "off",
+		"id-length": "off",
+		"max-statements": "off",
+		"max-len": ["error", {
+			"code": 120
+		}]
 	}
 }

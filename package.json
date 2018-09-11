@@ -1,31 +1,32 @@
 {
-  "name": "my_gulp_set",
-  "version": "1.0.0",
-  "description": "Ready gulp project",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Acromyon",
-  "license": "ISC",
-  "devDependencies": {
-    "babel-core": "latest",
-    "babel-preset-env": "latest",
-    "browser-sync": "latest",
-    "del": "latest",
-    "eslint-config-rallycoding": "latest",
-    "gulp": "latest",
-    "gulp-autoprefixer": "latest",
-    "gulp-babel": "latest",
-    "gulp-cssnano": "latest",
-    "gulp-imagemin": "latest",
-    "gulp-notify": "latest",
-    "gulp-plumber": "latest",
-    "gulp-rename": "latest",
-    "gulp-sass": "latest",
-    "gulp-sourcemaps": "latest",
-    "gulp-svgmin": "latest",
-    "gulp-uglify": "latest",
-    "imagemin-pngquant": "latest"
-  }
+	"name": "my_gulp_set",
+	"version": "1.0.0",
+	"description": "Ready gulp project",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Acromyon",
+	"license": "ISC",
+	"devDependencies": {
+		"babel-core": "latest",
+		"babel-preset-env": "latest",
+		"browser-sync": "latest",
+		"del": "latest",
+		"eslint": "latest",
+		"eslint-plugin-vue": "latest",
+		"gulp": "latest",
+		"gulp-autoprefixer": "latest",
+		"gulp-babel": "latest",
+		"gulp-cssnano": "latest",
+		"gulp-imagemin": "latest",
+		"gulp-notify": "latest",
+		"gulp-plumber": "latest",
+		"gulp-rename": "latest",
+		"gulp-sass": "latest",
+		"gulp-sourcemaps": "latest",
+		"gulp-svgmin": "latest",
+		"gulp-uglify": "latest",
+		"imagemin-pngquant": "latest"
+	}
 }

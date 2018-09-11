@@ -1,15 +1,28 @@
-const alignItems = document.getElementsByClassName('height-align');
+// Выравнивание бллоков по высоте
 
-let maxItemlHeight = 0;
+let alignItems = document.getElementsByClassName('height-align');
 
-for (let i = 0; i < alignItems.length; i++) {
-	if (maxItemlHeight < alignItems[i].clientHeight) {
-		maxItemlHeight = alignItems[i].clientHeight;
+getAlignItems(alignItems);
+
+function clearStyle() {
+	for (let i = 0; i < alignItems.length; i++) {
+		alignItems[i].removeAttribute('style');
 	}
+	getAlignItems(alignItems);
 }
 
-maxItemlHeight += 'px';
+function getAlignItems(items) {
+	let maxItemlHeight = 0;
 
-for (let i = 0; i < alignItems.length; i++) {
-	alignItems[i].style.height = maxItemlHeight;
+	for (let i = 0; i < items.length; i++) {
+		if (maxItemlHeight < items[i].clientHeight) {
+			maxItemlHeight = items[i].clientHeight;
+		}
+	}
+	maxItemlHeight += 'px';
+
+	for (let i = 0; i < items.length; i++) {
+		items[i].style.height = maxItemlHeight;
+	}
+	window.addEventListener('resize', clearStyle);
 }
